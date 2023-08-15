@@ -1,0 +1,2272 @@
+﻿[
+  {
+	"Version": "5.0.0",
+	"Date": "2023-07-16",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "UI Update",
+		"Order": 1,
+		"Changes": [
+		  "Updated to the most recent Slick UI version."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.7.2",
+	"Date": "2020-12-8",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Optimized and refined Full Page content."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.7.1",
+	"Date": "2020-10-31",
+	"Tagline": "Introducing management options to help sort out your content.",
+	"ChangeGroups": [
+	  {
+		"Name": "Manage Content",
+		"Order": 1,
+		"Changes": [
+		  "Added the option to Love, Rate & Tag your content to help remember your experience from it or help find them on a later date."
+		]
+	  },
+	  {
+		"Name": "Other Improvements",
+		"Order": 2,
+		"Changes": [
+		  "Improved Full Page content and added scrolling.",
+		  "Added keyboard control for the drop-down menu and an improved effect."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.7.0",
+	"Date": "2020-10-18",
+	"Tagline": "Full Page content is here to bless your eyes.",
+	"ChangeGroups": [
+	  {
+		"Name": "Full Page View",
+		"Order": 1,
+		"Changes": [
+		  "Introducing the new elevated experience to browse your content, Full Page View.",
+		  "Tv Show, Seasons, Episodes, Movies & People's pages have all been revamped with a glorious new interface."
+		]
+	  },
+	  {
+		"Name": "Other Improvements",
+		"Order": 2,
+		"Changes": [
+		  "Fixed the library loading indicator sometimes getting stuck.",
+		  "Improved the blur effect for the spoiler block option.",
+		  "Updated library episode matching to account for 'ep. X' formats.",
+		  "Some larger icons have been updated."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.6.1",
+	"Date": "2020-09-30",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Tile Banners",
+		"Order": 1,
+		"Changes": [
+		  "Banners on tiles have been revamped with a slick new design.",
+		  "Added banners to help get more info about the content you're looking at.",
+		  "Banners will show on a show or movie tile with keywords that match your search."
+		]
+	  },
+	  {
+		"Name": "Tags",
+		"Order": 2,
+		"Changes": [
+		  "Added tags info in the Show or Movie pages.",
+		  "Tags will be shown on a show or movie tile when it matches your search criteria."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.6.0",
+	"Date": "2020-09-20",
+	"Tagline": "A change of Focus",
+	"ChangeGroups": [
+	  {
+		"Name": "Focus",
+		"Order": 1,
+		"Changes": [
+		  "All items in the app can now be focused, and so be switched to using the tab key.",
+		  "This will ease the control of the app without relying on your mouse."
+		]
+	  },
+	  {
+		"Name": "Smarter Library Handler",
+		"Order": 2,
+		"Changes": [
+		  "Completely re-worked the local library handler for better performance and less taxing on your hard drives.",
+		  "The new handler maps out your library only once and refreshes when a change is made. This allows much faster check-ups when browsing your library.",
+		  "Original names for shows & movies are now taken in consideration when matching with your local files."
+		]
+	  },
+	  {
+		"Name": "UI Enhancements",
+		"Order": 3,
+		"Changes": [
+		  "Changed how UI scale is calculated when windows scaling is not at 100%. This will make the app have the same estimated size on computers with a different windows scale, but with a same UI scale.",
+		  "Improved tabs to accommodate for available width. This addresses the issue of tabs not fitting when the app's size isn't large enough."
+		]
+	  },
+	  {
+		"Name": "Other Improvements",
+		"Order": 4,
+		"Changes": [
+		  "Improved the algorithm behind matching files with your content.",
+		  "Reduced freeze time before loading panels containing watch controls, this includes the Dashboard & Watch tabs.",
+		  "Added tags to shows & movies that can be searched for in their respective libraries.",
+		  "Removed several trivial options."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.5.1",
+	"Date": "2020-08-30",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Slick Explorer",
+		"Order": 1,
+		"Changes": [
+		  "Introducing the new Slick Explorer.",
+		  "Slick Explorer brings an enhanced experience for browsing your library.",
+		  "Slick Explorer also comes integrated in directory and file lookup."
+		]
+	  },
+	  {
+		"Name": "New Loader",
+		"Order": 2,
+		"Changes": [
+		  "Re-designed the loader throughout the app.",
+		  "The new loader now works with any active color & does not look weird when used in a different light scheme."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.5.0",
+	"Date": "2020-08-20",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Night Mode & New Dashboard",
+		"Order": 1,
+		"Changes": [
+		  "Slick UI now supports automatic night-time dark mode based on your theme color.",
+		  "The dashboard now contains some episodes and movies that might be relevant for you to watch.",
+		  "The dashboard also got brand new suggested content based on your library."
+		]
+	  },
+	  {
+		"Name": "Player Improvements",
+		"Order": 2,
+		"Changes": [
+		  "Improved interactions in the player, clearing up unwanted behavior.",
+		  "Added a shortcut to view more info (Ctrl/Shift + Arrow Up/Down).",
+		  "Added the option to disable some mouse interactions that can possibly make it stutter."
+		]
+	  },
+	  {
+		"Name": "Video Library",
+		"Order": 3,
+		"Changes": [
+		  "Clicking on the directory bar now opens a text-box to easily navigate somewhere else.",
+		  "Improved the scrolling inside the page.",
+		  "Improved the method and speed of delivery for content."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.7",
+	"Date": "2020-07-28",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Icon & Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Re-designed the app Icon.",
+		  "You can now pre-view a show or movie before adding it to your library.",
+		  "Fixed empty information when opening a video file not associated with any episode or movie.",
+		  "Fixed some laggy animations."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.6",
+	"Date": "2020-07-14",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Settings & Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Re-designed the settings page.",
+		  "You can now toggle the boot option without having to be in administrator mode already.",
+		  "Improved the search in Shows & Movies when quickly typing before the bar had opened.",
+		  "Improved some UI aspects."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.5",
+	"Date": "2020-07-11",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New & Shiny",
+		"Order": 1,
+		"Changes": [
+		  "Unified adding content to your library & added the option to load more results for your search.",
+		  "Added the option to load your local library after the app shows up for faster launch time."
+		]
+	  },
+	  {
+		"Name": "Slick UI Update",
+		"Order": 2,
+		"Changes": [
+		  "Improved some controls' interaction with UI scaling.",
+		  "Directory lookup in text-boxes now accepts starting with 'Desktop', 'Downloads' & 'Documents'.",
+		  "Improvement to the slider & scroll controls."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.4",
+	"Date": "2020-07-06",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements & Fixes",
+		"Order": 1,
+		"Changes": [
+		  "Added the option to edit subtitle delay",
+		  "Improved interactions in the video player",
+		  "Added the option to set all previous episodes as watched/unwatched",
+		  "Made it possible to set an episode as watched by clicking the unwatched marker on the Episode Page",
+		  "Improved many UI fails when having windows zoom other than 100%"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.3",
+	"Date": "2020-05-26",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New & Improved",
+		"Order": 1,
+		"Changes": [
+		  "Added the 'Theater' option to make the app pitch black when the player is in full-screen.",
+		  "Improved the UI scaling on different zoom levels.",
+		  "Fixed some sections being visible when they should not."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.2",
+	"Date": "2020-05-09",
+	"Tagline": "Slick Controls brings in the long awaited UI Scaling feature, now fully integrated in Shows Calendar!",
+	"ChangeGroups": [
+	  {
+		"Name": "UI Scaling",
+		"Order": 1,
+		"Changes": [
+		  "Customize the UI size right in the Theme Changer page (right-click on the app logo to access).",
+		  "Customize which font the app uses as well."
+		]
+	  },
+	  {
+		"Name": "Download Filtering",
+		"Order": 2,
+		"Changes": [
+		  "Download options are not split between relevant and irrelevant categories.",
+		  "Irrelevant download options will be hidden and shown by pressing on 'More Torrents'"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.1",
+	"Date": "2020-05-03",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements & fixes",
+		"Order": 1,
+		"Changes": [
+		  "Added the Sticky Mini-Player option to ease it's location.",
+		  "Added the right-click menu on small media viewer controls",
+		  "Picture-in-Picture no longer activates when viewing a Youtube video",
+		  "Fixed Picture-in-Picture sometimes freezing the app and having  dark controls on dark themes",
+		  "Fixed app crashing on some computers when ran in administrator mode."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.4.0",
+	"Date": "2020-04-25",
+	"Tagline": "A real app at last!",
+	"ChangeGroups": [
+	  {
+		"Name": "Windows Integration",
+		"Order": 1,
+		"Changes": [
+		  "Added Shows Calendar to the 'Open With' options of windows.",
+		  "Shows Calendar will not be registered as a Windows App."
+		]
+	  },
+	  {
+		"Name": "Picture in Picture",
+		"Order": 2,
+		"Changes": [
+		  "Added the On by default option to keep the player in PnP instead of exiting it.",
+		  "When enabled the player will keep playing while you browse other things in the app."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.3.3",
+	"Date": "2020-04-20",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Video Library",
+		"Order": 1,
+		"Changes": [
+		  "Re-hauled the Library tab to allow a quick and easy browsing experience of your library.",
+		  "The idea behind it is an enhanced file explorer for videos with modern search and faster access to videos.",
+		  "When opening a file it will automatically match it with an episode or movie in your library to save watch time.",
+		  "You can now drag and drop a video file in the app to start playing it."
+		]
+	  },
+	  {
+		"Name": "Main Changes",
+		"Order": 2,
+		"Changes": [
+		  "Context menu's hidden actions now automatically expand when hovered.",
+		  "Library re-namer now adds the year of a movie to its name.",
+		  "Added custom cursors to the app",
+		  "Added a preview window to images",
+		  "Added automatic thumbnail to movies with existing video files.",
+		  "Improved the single instance feature.",
+		  "Fixed the context menu when playing a movie"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.3.2",
+	"Date": "2020-04-17",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Movie Library",
+		"Order": 1,
+		"Changes": [
+		  "Improved the speed of matching your movies with your files.",
+		  "Fixed movies being mistakenly matched to a wrong file."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.3.1",
+	"Date": "2020-04-14",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Library Changes",
+		"Order": 1,
+		"Changes": [
+		  "Shows Calendar will now automatically detected missing episodes that are available on your PC and add them your show automatically.",
+		  "This will automatically create an episode, its season, find its name and get a thumbnail for it."
+		]
+	  },
+	  {
+		"Name": "Other Changes",
+		"Order": 2,
+		"Changes": [
+		  "Episodes missing a thumbnail but having a video file linked to it will automatically get a new generated thumbnail.",
+		  "Mini-player will remember its last position when switching in and out of it."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.3.0",
+	"Date": "2020-04-07",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Video Player Changes",
+		"Order": 1,
+		"Changes": [
+		  "Added a small banner when in full screen to display the title of what you are watching.",
+		  "Added a small pop-up to easily switch to the next episode.",
+		  "Added two options to change play speed and aspect ratio of the video.",
+		  "The 'Less Info' button will now be docked on top while scrolling.",
+		  "Improved switching between Full-screen, Mini-player & Normal mode.",
+		  "Improved the responsiveness and aspect ratio when re-sizing the window.",
+		  "Fixed cases where the application would hang when switching episodes."
+		]
+	  },
+	  {
+		"Name": "Other Improvements",
+		"Order": 2,
+		"Changes": [
+		  "Improved the download screen with more accurate search & faster load time.",
+		  "Dramatically reduced the time for your library to be loaded.",
+		  "Closing a notification when others are present now instantly removes it.",
+		  "Reduced CPU usage on app start.",
+		  "Fixed images not properly showing on info pages."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.2.3",
+	"Date": "2020-03-29",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Improved the load of content on the dashboard.",
+		  "Small improvements to the video player."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.2.2",
+	"Date": "2020-03-21",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Spoiler Filter",
+		"Order": 1,
+		"Changes": [
+		  "Added the option to blur the thumbnail of episodes that are not yet watched.",
+		  "Added the option to exclude the Specials season from the episode order."
+		]
+	  },
+	  {
+		"Name": "Improvements",
+		"Order": 2,
+		"Changes": [
+		  "Improved and Fixed library re-namer.",
+		  "Fixed a crash when updating movies."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.2.1",
+	"Date": "2020-02-19",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Grouped the Crew section in movies and shows by their departments.",
+		  "Fixed the movie page showing an incorrect 'unwatched' sign"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.2.0",
+	"Date": "2020-02-17",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Trailers & More",
+		"Order": 1,
+		"Changes": [
+		  "Movies, Tv Shows, Tv Seasons and Tv Episodes now all include trailers, clips, bloopers & more.",
+		  "Stream them straight in the app for the fully immersive experience"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.5",
+	"Date": "2020-02-05",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Video Player Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Application should not longer freeze occasionally when changing the time or exiting the player.",
+		  "Improved the animation when going in and out of full-screen.",
+		  "Added the option to take a screen-shot of the video"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.4",
+	"Date": "2020-01-24",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes",
+		"Order": 1,
+		"Changes": [
+		  "Improved the detection of unwanted results in the download list.",
+		  "Small improvements and bug fixes."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.3",
+	"Date": "2019-12-07",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes",
+		"Order": 1,
+		"Changes": [
+		  "Fixed new episode notifications not showing occasionally.",
+		  "Fixed downloads forever-loading if Zooqle is down."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.2",
+	"Date": "2019-11-17",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Download Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Added support for ThePirateBay in-line search.",
+		  "Added a download button for episode & season pages."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.1",
+	"Date": "2019-10-01",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Mini-Player Improvements & Fixes",
+		"Order": 1,
+		"Changes": [
+		  "Enabled moving the mini-player window by dragging it around from the video.",
+		  "Fixed the controls sometimes not hiding back.",
+		  "Changed the Lazy Mini-Player settings accordingly."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.1.0",
+	"Date": "2019-08-13",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New & Improved",
+		"Order": 0,
+		"Changes": [
+		  "Added a timer when switching from one episode to the other.",
+		  "Episode order is now based on release date instead of numbers."
+		]
+	  },
+	  {
+		"Name": "Improvements & Fixes",
+		"Order": 1,
+		"Changes": [
+		  "Fixed the 'On Deck' in the dashboard not showing the first episode being watched.",
+		  "Fixed the video player freezing occasionally.",
+		  "Fixed the video player playing when the app was closed."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.9",
+	"Date": "2019-06-27",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements & Fixes",
+		"Order": 0,
+		"Changes": [
+		  "You can now use ctrl+tab to go in and out of the mini-player.",
+		  "Improved notification and tool-tip windows",
+		  "Fixed a rare connection error that would crash the app on start"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.8",
+	"Date": "2019-05-04",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improvements & Fixes",
+		"Order": 0,
+		"Changes": [
+		  "Mini-Player now only resizes to the aspect ratio of the video",
+		  "Fixed double case icons in the Player",
+		  "Other general fixes"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.7",
+	"Date": "2019-04-29",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Crew in Player",
+		"Order": 0,
+		"Changes": [
+		  "Added the crew of the episode or movie being watched"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.6",
+	"Date": "2019-04-28",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes & Improvements",
+		"Order": 0,
+		"Changes": [
+		  "Fixed crash related to automatic file cleaner.",
+		  "Improved the player's controls's look.",
+		  "Fixed the 'More Info' button in the player.",
+		  "Added an option to view the storage used by thumbnails and to delete them.",
+		  "Fixed various images having a stuck loader icon"
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.5",
+	"Date": "2019-04-19",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Player Improvements",
+		"Order": 0,
+		"Changes": [
+		  "Added a new option to disable accidental clicks on the mini-player.",
+		  "Fixed some issues with moving the mini-player and other hiccups.",
+		  "Fixed the sound level being wrong when going out and back in the player.",
+		  "Fixed movie progress not being save correctly."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.4",
+	"Date": "2019-03-28",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Upgraded Player",
+		"Order": 0,
+		"Changes": [
+		  "Added more information about the video being played:",
+		  "- An 'Up Next' tile if you're watching an episode.",
+		  "- A list of the cast in this episode.",
+		  "- A view of where you might have seen said cast.",
+		  "Fixed multiple errors that occurred when leaving the player."
+		]
+	  },
+	  {
+		"Name": "New Cast & Crew Pages",
+		"Order": 1,
+		"Changes": [
+		  "In this page, you can see where you've seen the actor in your library, or view his notable works."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.3",
+	"Date": "2019-03-17",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Customizations",
+		"Order": 0,
+		"Changes": [
+		  "Added sorting options for Shows & Movies, including relative release date, year, name & genre.",
+		  "Added the option to choose how many results are shown in the discover view.",
+		  "Added the option to disable opening the Show & Season page when viewing the episode page",
+		  "Added the option to manage what happens when an episode you're watching ends."
+		]
+	  },
+	  {
+		"Name": "Fixes & Improvements",
+		"Order": 1,
+		"Changes": [
+		  "Improved the change-log with new layout, design and more information."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.2",
+	"Date": "2019-03-15",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Dashboard",
+		"Order": 0,
+		"Changes": [
+		  "Added a 'Continue Watching' section that includes episodes you've arrived at, but haven't downloaded to watch."
+		]
+	  },
+	  {
+		"Name": "Fixes & Improvements",
+		"Order": 1,
+		"Changes": [
+
+		  "Improved Shows & Movies library search algorithm.",
+		  "Removed obsolete options.",
+		  "Fixed an error when trying to view a show or movie that haven't loaded yet."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.1",
+	"Date": "2019-03-07",
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [
+		  "Fixed not being able to click buttons on episode tiles.",
+		  "Fixed various errors when using the app without Internet."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "4.0.0",
+	"Date": "2019-03-03",
+	"Tagline": "One year later, Shows Calendar finally has its 4th major revision, introducing a complete design change in every single aspect of the app, as well as more needed features and quality of life improvements.",
+	"ChangeGroups": [
+	  {
+		"Name": "The Slickest Design Yet",
+		"Order": 0,
+		"Changes": [
+		  "Complete re-think of the design, every aspect of the app is changed, more modern and simple.",
+		  "Introducing pixel-perfect icons; slicker, aesthetic icon re-haul."
+		]
+	  },
+	  {
+		"Name": "Re-Namer meets Calendar",
+		"Order": 1,
+		"Changes": [
+		  "Introduced the magical re-naming feature of Shows Re-Namer, right in the app.",
+		  "Allowing you to seamlessly organize your library with a single click.",
+		  "Automate your cleanup routine with the Automatic Cleanup feature that cleans up your files when you're away"
+		]
+	  },
+	  {
+		"Name": "Download Anything",
+		"Order": 2,
+		"Changes": [
+		  "Downloads no longer require a show to be linked to Zooqle.",
+		  "You can now download any episode, season or movie with a click.",
+		  "Download info is more accurate, including a health indicator for the torrent."
+		]
+	  },
+	  {
+		"Name": "New pages to check out",
+		"Order": 3,
+		"Changes": [
+		  "Library; view the entirety of your watch library in one place.",
+		  "Season & Episode Page; view more information like guest stars, crew, images and local files.",
+		  "Library Folders; with the introduction of a library search feature to automatically scan your files and suggest Shows & Movies to add."
+		]
+	  },
+	  {
+		"Name": "Other Improvements",
+		"Order": 4,
+		"Changes": [
+		  "Improved the local library handler, now faster and automatically refreshes when you download/edit a file.",
+		  "Smarter file handler, allows for more than one file associated to an episode or movie.",
+		  "Trying to play an episode or movie with multiple files will open a page to choose which to play, including useful info to differentiate them.",
+		  "Shows & Movies search; start typing in your Content tabs to immediately search your library.",
+		  "Discover now shows 5x more items than usual.",
+		  "Smooth Scrolling; true smoothness."
+		]
+	  }
+	]
+  },
+  {
+	"Version": "3.0.0",
+	"Date": null,
+	"Tagline": "Introducing Slick Design, this update brings major improvements to the design of the app, and a massive sweep with bug fixes all around.",
+	"ChangeGroups": [
+	  {
+		"Name": "Shiny and New",
+		"Order": 0,
+		"Changes": [ "On Deck items will now show in the main window in the 'Play' tab.", "Fixed Show Library loading episodes multiple times on first run.", "CPU usage massively decreased by ~85%." ]
+	  },
+	  {
+		"Name": "Slick Design",
+		"Order": 0,
+		"Changes": [ "The neat feature that allows the app to take multiple designs, even custom ones, got a brand refresh!", "Presets got needed improvements and tweaks.", "Controls change color faster!", "A new options for 'Button Color' & 'Active Text Color'." ]
+	  },
+	  {
+		"Name": "Slick Controls",
+		"Order": 0,
+		"Changes": [ "The USAX (Unified Slick Apps Experience) is taking over Shows Calendar!", "Faster, Better, Slicker buttons, text-boxes, images & windows.", "Zero-Stutter controls arrive with USAX too.", "Scrolling, for real this time. True, smooth, glitch-less scrolling!" ]
+	  },
+	  {
+		"Name": "Bug Fixes",
+		"Order": 0,
+		"Changes": [ "Over 15 crash-fixes, anywhere around.", "Fixed TextBoxes not.. working?", "Fixed errors when adding Shows.", "Fixed errors when opening the Theme Changer.", "Fixed Show Library not finding episodes with multiple naming styles." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.1.0",
+	"Date": null,
+	"Tagline": "Introducing the new Watch Window, this new feature will play your episodes right from the app, making it possible for the app to remember exactly where you left off that episode you couldn't quite finish!",
+	"ChangeGroups": [
+	  {
+		"Name": "Watch Window",
+		"Order": 0,
+		"Changes": [ "Watch Window will be opened instead of your default media player when playing an episode from the app.", "The app will save your progress whenever you pause the video, change episode or close the window." ]
+	  },
+	  {
+		"Name": "Quality of Life & Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed Main Window's watch tiles not refreshing correctly.", "Added a prompt when leaving the Folder Selection window in case the text box is not empty.", "Improved speed of library." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.1.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Watch Improvements",
+		"Order": 0,
+		"Changes": [ "Added Audio Volume from the audio control in the player.", "Fixed player not automatically selecting subtitles." ]
+	  },
+	  {
+		"Name": "General",
+		"Order": 0,
+		"Changes": [ "Improved the menu strip for episodes, giving the option to link, download and play easily.", "Improved the input prompt by increasing the size of the text box and letting it get focus at the start." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.2.0",
+	"Date": null,
+	"Tagline": "This update changes how data is saved, making some actions faster and keeping information safer.",
+	"ChangeGroups": [
+	  {
+		"Name": "Save Changes",
+		"Order": 0,
+		"Changes": [ "All Information is now saved in the '.tf' format." ]
+	  },
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "Updated the colors of the Grey Theme, more Grey, less Blue." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed Theme Changer not changing the styles correctly.", "Fixed Theme Changer fucking up the rest of the colors when you start changing one.", "Fixed Watch feature sometimes showing the wrong episode.", "Fixed Watch feature sometimes showing a non-existing episode.", "Fixed Message prompt not having the correct size when shown." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.2.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Tool-tips for All",
+		"Order": 0,
+		"Changes": [ "Added tool-tips to most items through-out the app.", "Fixed tool-tips not showing." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.2.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Theme Changer Improvements",
+		"Order": 0,
+		"Changes": [ "Added customized Color Picker.", "Color Picker now include HEX code and 'Last Used Colors'.", "Color Picker will automatically preview your changes on the fly." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.2.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Theme Improvements",
+		"Order": 0,
+		"Changes": [ "Added the new 'Chic' Theme Preset.", "Improved how aspects of the app react with a theme type.", "Fixed not being able to change the HSL values in the color picker." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.3.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Movies are Back!",
+		"Order": 0,
+		"Changes": [ "Movies are back in business, better than ever.", "Movies are now searched for in your library.", "You can play a movie right from the app, it will then remember your progress if you decide to leave the movie for another time.", "Movies will be added in the Library in further updates." ]
+	  },
+	  {
+		"Name": "Library Improvements",
+		"Order": 0,
+		"Changes": [ "On-Deck episodes will be larger and have a landscape image from the episode.", "On-Deck episodes will show your current progress in the episode.", "Improved sections in the Library." ]
+	  },
+	  {
+		"Name": "Improvements & Fixes",
+		"Order": 0,
+		"Changes": [ "Improved Icons all-around the app.", "Improved the \"New\" and \"Unwatched\" banners.", "Fixed Shows reloading every time the app is opened instead of every 2 days.", "Fixed tool-tips." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.3.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Library Improvements",
+		"Order": 0,
+		"Changes": [ "Library now includes Movies.", "Watched Episodes will now keep their progress track.", "Improved how sections are decided.", "Greatly improved the load time of the show library." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.3.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Watch Improvements & Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed the app not remembering where you left off an episodes.", "Episode Tiles now update while you're watching the episode with its progress.", "Other fixes." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.4.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Settings",
+		"Order": 0,
+		"Changes": [ "Improved the settings window with categories.", "Added 3 new settings for the Watch window." ]
+	  },
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed Watch not saving progress correctly.", "Fixed Watch not remembering the date an episode was watched." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.4.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Change-log",
+		"Order": 0,
+		"Changes": [ "Added this fancy new change-log window.", "Press on the left groups to view more." ]
+	  },
+	  {
+		"Name": "New Settings",
+		"Order": 0,
+		"Changes": [ "Added two options to customize how often Shows/Movies are refreshed." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed the Play tab only showing one episode on startup.", "Fixed the app not remembering the last check time for shows.", "Fixed episodes not being in their correct tabs.", "Improved the animation of the controls in the player window." ]
+	  }
+	]
+  },
+  {
+	"Version": "3.4.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Show Tiles",
+		"Order": 0,
+		"Changes": [ "Changed the look of Show Tiles for the first time since their creation." ]
+	  },
+	  {
+		"Name": "Watch",
+		"Order": 0,
+		"Changes": [ "Improved the design of the controls section." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.1.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Clicking an Episode's title now takes you to the Zooqle page of that Episode." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "First Time Setup has been removed and instead has been merged with the Settings Form.", "Clicking the Thumbnail of an Episode now takes you to its Show in the Shows Form.", "Episodes are now in Chronological Order.", "Shows are now Loaded in the Chronological Order of their Last Aired Episode." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.1.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Added this fancy ChangeLog Form.", "Adding Shows now automatically scrolls to the added Show.", "Added a new tool-tip below the Boot option if the app is not in Admin Mode." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Loading animation in a loading Show is now showed on the top right instead of next to the episode names", "Terminate App Button is now stickied to the bottom of the Settings Form and is now in Red." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed a crash while adding shows without Internet connection." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.1.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Clicking the version of the App now shows the full change log list.", "You can now disable this automatic pop-up in the Settings form." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed Episodes not Showing in the \"Yesterday\" Tab.", "Fixed Upcoming Episodes sometimes showing episodes that air in more than a week." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.1.5",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Today's Episodes notification now plays a notification sound.", "Shows and Settings Forms' sizes are now saved like the Main Form." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Episodes will no longer refresh after closing the settings form unless needed.", "Change Log was improved to have better readability.", "Slightly revamped the Show and Episode Tiles." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed a Crash when you opened a Link without a default web browser selected.", "Fixed a Crash when you clicked the name of the Show while it's still loading." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.2.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Added Maximize buttons to all windows.", "Added a fancy Loading Bar when Shows are being loaded.", "Future Air Times now show what day of the week it will be.", "You can now press F5 to refresh Episode Tiles.", "You can now remove a Show even when it's still loading." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Future Air Times are now more accurate when Air time is within a day.", "Main Window's minimum size has been reduced to 425x275 instead of 450x300." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed a crash when an episode does not have an Air Date yet.", "Settings Form now correctly remembers its Size." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.2.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Partially fixed the app not finishing loading Shows if the Internet cuts mid-way.", "Fixed a crash when you refresh multiple times in a row.", "Fixed a crash in random rare cases." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.2.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Added Refresh button on Shows that forces all its data to update." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Delete button in Show Tiles was moved down to make place for the Refresh button." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed episodes remaining in the \"Yesterday\" tab 1 day longer.", "Fixed a case where Shows stop loading if you delete the one currently loading." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.2.2.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed a crash while loading Shows." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "LIGHT MODE IS HERE. Toughie, that one.." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Settings window labels now fit the rest of the App.", "Shows window will no longer get focused if it wasn't activated.", "Loading Shows will no longer defocus the URL text box." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed some occasional crashes.", "Fixed the Loading Bar not going all the way." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "Next Episode in Show Tiles now has a link to the episode's page." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Terminate App Button's style was changed.", "Someone forgot to apply the Light Mode to this delightful Change Log window!", "Loading Bar is no longer darker in Light Mode." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Shows no longer have the loading icon if the Shows window was opened after they already loaded.", "Changing between Light/Dark while not connected no longer resets the main icon." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed a startup crash if the Shows.dll was missing.", "Fixed being unable to Add Shows." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Stuff:",
+		"Order": 0,
+		"Changes": [ "The App will now automatically detect when a new version available and ask for a restart (or restart by itself if the app was in the task bar)." ]
+	  },
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Shows now wait in turns to load instead of loading all at the same time." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed being unable to remove a show, or the app crashing if trying.", "Fixed Episode names on Show Tiles not changing color if you swap between Light/Dark Mode." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.3.5",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Stuff that Changed:",
+		"Order": 0,
+		"Changes": [ "Episode quality now loads way faster and is now accurate.", "QoL and Design changes all around the App." ]
+	  },
+	  {
+		"Name": "Bugs that got Squashed:",
+		"Order": 0,
+		"Changes": [ "Fixed the app showing an episode that has not been released yet as Latest Episode." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.4.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improved Episode Mapping:",
+		"Order": 0,
+		"Changes": [ "Episode mapping has been completely changed and is now faster and more reliable.", "Finding Last Aired and Next Episodes now takes 2-3 seconds.", "Speeds are 5x faster than before and is no longer dependent on the Season/Episode count of a Show." ]
+	  },
+	  {
+		"Name": "New Advanced Resizing:",
+		"Order": 0,
+		"Changes": [ "All parts of the App now change size with their respective windows.", "Minimum Sizes for some windows will be reduced in this Mode.", "This can be toggled in the Settings (Resize Mode)" ]
+	  },
+	  {
+		"Name": "Aesthetic Changes:",
+		"Order": 0,
+		"Changes": [ "Episode Name is no longer blocked by the Get Torrent Area.", "You'll be prompted if you're trying to close the App to confirm your action.", "Loading Bar is now smaller.", "Minimize/Maximize/Close buttons now have a hand cursor when hovered on." ]
+	  },
+	  {
+		"Name": "Bug Fixes:",
+		"Order": 0,
+		"Changes": [ "Clicking the Loading Icon of a Show no longer crashes the App." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.4.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Shows Layout Changes:",
+		"Order": 0,
+		"Changes": [ "Shows are now shown in a Tile-Layout rather than a List-Layout.", "Shows are sorted in columns if enough space is available (675 minimum width).", "Shows start getting sorted in more than one column after 1350 width (720p Full Screen)." ]
+	  },
+	  {
+		"Name": "Bug Fixes:",
+		"Order": 0,
+		"Changes": [ "Fixed being unable to re-add a show after it was deleted.", "Fixed Refresh Button in Shows not having the Hand cursor.", "Fixed Quality selection box overlapping." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.4.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "More Info for everyone",
+		"Order": 0,
+		"Changes": [ "Added Tool-tips for various controls around the App" ]
+	  },
+	  {
+		"Name": "Bug Fixes:",
+		"Order": 0,
+		"Changes": [ "Fixed wrong quality being shown for episodes where preferred quality was unavailable.", "Fixed a crash when the app could not find an episode's quality.", "Fixed Episode tabs not being closed correctly at startup." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.4.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Search for Shows",
+		"Order": 0,
+		"Changes": [ "You can now use the URL text box to search your shows!", "Search will work for both literal text and abbreviations." ]
+	  },
+	  {
+		"Name": "Other Changes",
+		"Order": 0,
+		"Changes": [ "Small fixes to the Episode and Show Tile Layout.", "Episode quality no longer overlaps the Get Torrent text/icon." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.5.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Show Pages",
+		"Order": 0,
+		"Changes": [ "Show Pages include a List of all the Seasons and Episodes of a Show.", "Selecting an Episode will open its Episode Tile containing its info.", "Clicking on a Show's thumbnail now opens its Show Page.", "Opening a Show on zooqle was changed to the title click." ]
+	  },
+	  {
+		"Name": "Bug Fixes:",
+		"Order": 0,
+		"Changes": [ "Fixes a crash on the first time setup if the app was not ran in Administrator Mode." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.5.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Show Pages Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed Episodes overlapping if they were an odd number or higher than 100.", "Fixed Seasons not showing if they were in years format." ]
+	  },
+	  {
+		"Name": "QoL Changes/Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed a crash after removing a show after they all loaded.", "Adding Zooqle URLs that do not lead to Shows is now correctly managed.", "Change-log no longer pops up on First Time Setup.", "Main Window now starts at a smaller size at the top left instead of the center." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.5.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Streamlined Show Search",
+		"Order": 0,
+		"Changes": [ "Using the URL bar to search Shows now shows its results in-app rather than opening Zooqle.", "The Results will be shown as mini show tiles with a button to add each show to yours.", "Holding CTRL while trying to search will open the Zooqle search page like before.", "Added a new option in Settings to toggle this Feature." ]
+	  },
+	  {
+		"Name": "First Time Setup",
+		"Order": 0,
+		"Changes": [ "Running the app for the first time will automatically ask for Admin privileges instead of asking the user to re-run the app.", "The first Settings open will not have the Terminate App option.", "Updated informational pop-ups.", "Fixed the change-log change in v1.5.1 " ]
+	  },
+	  {
+		"Name": "Other Changes",
+		"Order": 0,
+		"Changes": [ "Fixed a bug that would make functions run excessively making the app stutter.", "Added a delay until the app starts searching local shows.", "Air date no longer shows the day of the week if it's beyond 7 days away." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Dark Theme",
+		"Order": 0,
+		"Changes": [ "Added a new Darker Teal Theme accessed by clicking the TV Calendar Icon." ]
+	  },
+	  {
+		"Name": "New Internet Request Protocol",
+		"Order": 0,
+		"Changes": [ "The new, queue-based protocol will ensure that Internet requests do not get lost, this will result more accurate received data.", "Shows now load simultaneously rather than waiting for each other without errors." ]
+	  },
+	  {
+		"Name": "New Buttons",
+		"Order": 0,
+		"Changes": [ "New (experimental) buttons have been added throughout the app.", "These new buttons are more flexible than the others." ]
+	  },
+	  {
+		"Name": "QoL Changes",
+		"Order": 0,
+		"Changes": [ "Clicking Open-All now automatically closes the Today Notification.", "Unused Thumbnails are now automatically cleaned." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Buttons",
+		"Order": 0,
+		"Changes": [ "The (experimental) buttons introduced in v1.6.0 are now final!", "Buttons now have a smooth corner and no borders." ]
+	  },
+	  {
+		"Name": "Dynamic Colors",
+		"Order": 0,
+		"Changes": [ "Changed how the app uses images and colors from Designs.", "This change means less pictures used (lower size) and future Custom Themes." ]
+	  },
+	  {
+		"Name": "Design Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed missing Icons.", "Fixed Icons not changing color on hover.", "Fixed buttons not responding correctly." ]
+	  },
+	  {
+		"Name": "Express Error Fix",
+		"Order": 0,
+		"Changes": [ "Fixed the massive error Spam coming from the app." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Custom Theme",
+		"Order": 0,
+		"Changes": [ "Customize the App however you want! ", "Right-Click the App Icon anywhere around the app to show the Theme Menu.", "Changing the custom theme's base theme configures how controls like buttons use the chosen colors." ]
+	  },
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "Smaller buttons' corner radius was increased.", "Active buttons in the Grey Theme now have a lighter text color.", "Changing Themes now reflects the change on Change-Log and Notify windows.", "Clicking on the Top Left icon on the Change-Log and Notify windows now has the same behavior as the rest of the windows." ]
+	  },
+	  {
+		"Name": "Known Issue",
+		"Order": 0,
+		"Changes": [ "Buttons sometimes not registering clicks will be fixed soon." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Improved Reminders",
+		"Order": 0,
+		"Changes": [ "Imagine you skipped a day with your computer (how dare you)", "Now imagine an episode came out in that time.", "Finally imagine the app remembering that you haven't seen that episode and will still notify you when you come back!", "Basically, App now will still show you 1 week old episodes if you missed them." ]
+	  },
+	  {
+		"Name": "Theme Changer Upgrade",
+		"Order": 0,
+		"Changes": [ "Right-Clicking a color will reset that one color to its default value.", "Added a Reset button in case sh*t goes down.", "Minimize/Maximize/Close buttons now work.", "Fixed a crash if you closed Theme Changer and re-opened it." ]
+	  },
+	  {
+		"Name": "Design Stuff",
+		"Order": 0,
+		"Changes": [ "App border is now 33% thinner! Sleek!", "Slight location changes to the Show Tile.", "Open All button in the New Episodes window is now of a Green Shade." ]
+	  },
+	  {
+		"Name": "Bug Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed buttons not responding to clicks in some cases.", "Fixed a crash when changing Themes.", "Fixed Shows never finishing loading.", "Fixed how Color Shading works (Terminate and Open All Buttons)" ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Episode Changes",
+		"Order": 0,
+		"Changes": [ "'Yesterday' menu is now called 'Missed' and will contain any episode you haven't been notified about in the past week.", "A Show's upcoming episode will no longer show if its last aired episode was released Today." ]
+	  },
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "Added Yellow and Green colors to customizable colors.", "Check-boxes now change based on the theme colors." ]
+	  },
+	  {
+		"Name": "Bug Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed a crash when opening the Theme Changer for the first time.", "Fixed the app showing unreleased episodes in the New Episodes notification." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.6.5",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Shiny New Things",
+		"Order": 0,
+		"Changes": [ "Added an option that toggles between Accurate/Fast Show loading.", "     -  Set to Fast by default; ", "     -  Fast determines last Aired Episodes based on torrent availability.", "     -  Accurate determines last Aired Episodes based on per-episode Air Date.", "Added a Mouse-Down effect on some icons and texts around the app when you hold your mouse down on them.", "Added a Hover and Mouse-Down effect on Show Thumbnails." ]
+	  },
+	  {
+		"Name": "Fixes! Get your Bug Fixes!",
+		"Order": 0,
+		"Changes": [ "Fixed *multiple* crashes related to Shows loading.", "Fixed being able to hover and click on an empty Next Episode in Shows.", "Fixed Shows occasionally not loading episodes correctly." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.7.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Show Loading Algorithm Changes",
+		"Order": 0,
+		"Changes": [ "Removed the Show Loading option toggle.", "The Fast and Accurate loading algorithms are now merged together resulting in fast yet still accurate results.", "Shows now wait for the previous loading show to initialize so it starts, rather than loading everything at the same time." ]
+	  },
+	  {
+		"Name": "Custom Theme Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed Custom Theme not loading correctly.", "Fixed Custom Theme not changing with a Dark base theme.", "Fixed Custom Theme being erased on App load." ]
+	  },
+	  {
+		"Name": "Things to Note",
+		"Order": 0,
+		"Changes": [ "\"No Results\" when searching for shows is now specific to the type of search you made.", "Red Areas have are now bolder in a Light Theme.", "Buttons in Light Theme now use a darker shade while idle.", "Buttons in Grey Theme use the same Style as the Dark Theme while idle or hovered upon." ]
+	  },
+	  {
+		"Name": "Fixes for me, Fixes for You!",
+		"Order": 0,
+		"Changes": [ "Fixed an Error pop-up if you click \"No Episodes Yet\".", "Fixed Shows loading with the same name and thumbnail.", "Fixed \"Loading Shows\" going on forever even thought shows loaded.", "Fixed Loading Bar not working if there was no Internet connection at the start." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.7.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "Changed all Button Icons throughout the App.", "Search results now include the Show's description." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed some shows throwing errors every time they loaded." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.8.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Streamlined Torrent Download",
+		"Order": 0,
+		"Changes": [ "Getting an episode's torrent now opens an in-app download window instead of the episode's Zooqle page.", "The Download page will show the available downloads for the selected Video Quality.", "Each download option will show its available Subtitles, Audio and Video Quality, Size and a Download button.", "The download button will read \"Download\" if a magnet link is available and \"Zooqle\" if not.", "If a magnet link is available, clicking the button will automatically open the torrent for download." ]
+	  },
+	  {
+		"Name": "All New Connection Algorithm",
+		"Order": 0,
+		"Changes": [ "Completely changed how the app requests data from Zooqle.", "Everything now loads at the same time rather than waiting each other's turn.", "Requests no longer get mashed up together, which could result in inaccurate data.", "Numbers; 6x (Yes, SIX times) Faster Loading Speeds." ]
+	  },
+	  {
+		"Name": "Behavior Changes",
+		"Order": 0,
+		"Changes": [ "Clicking an episode's thumbnail now opens the Show's in-app page rather than the Zooqle page.", "Clicking a Show Tile's Latest Episode now takes you immediately to its download window.", "Clicking a Show Tile's Next Episode now does nothing.", "Advanced Resize option will now be always enabled and has been removed from the options." ]
+	  },
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "All Show Thumbnails have now Rounded Edges and have new animations on mouse hover/down.", "Option Tabs are now generally smaller.", "Changed the Trash Icon.", "Trash and Refresh Icons are now smaller.", "Buttons now have Bold Text." ]
+	  },
+	  {
+		"Name": "Bug Fixes",
+		"Order": 0,
+		"Changes": [ "The App now remembers the Today/Missed/Upcoming Tab state.", "Holding the mouse down on an episode with a long name now correctly shows the background effect.", "A whole lot of crashes have been fixed.", "Fixed the version numbers in the Change-Log not changing colors correctly." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.8.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Torrent Ordering",
+		"Order": 0,
+		"Changes": [ "Clicking on the Label/Subtitle/Sound/Resolution/Size Icons in the Download window will sort the torrents based on the selected criteria." ]
+	  },
+	  {
+		"Name": "Notable Changes",
+		"Order": 0,
+		"Changes": [ "Aired episodes are now based on their download availability, this should compensate for when an episode aired without available downloads.", "Episodes will now show \"No Available Downloads Yet\" instead of \"None Selected\" for accuracy.", "Clicking an Episode's thumbnail now takes you to that same episode in its Show's Page.", "Clicking a Show's thumbnail will additionally open the last Season in its Show Page." ]
+	  },
+	  {
+		"Name": "Design Changes",
+		"Order": 0,
+		"Changes": [ "Added an icon near Episode/Show names and slightly tweaked the locations of the episode tile's components.", "No Results in the Download Form has been toned down.", "Improved the Refresh/Delete Icons for Shows.", "Improved Show Thumbnail animations and added an animation when Clicked." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.8.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Download Window Changes",
+		"Order": 0,
+		"Changes": [ "Opening download options for an Episode will show the Top 5 downloads for each quality (if available).", "Additionally, you'll be able to choose between available Video Qualities to have more options in said Quality.", "Right-Clicking the Label/Subtitle/Sound/Resolution/Size Icons will sort in the opposite order." ]
+	  },
+	  {
+		"Name": "New/Updated Settings",
+		"Order": 0,
+		"Changes": [ "Added the \"Download Behavior\" option, enabling it makes clicking on a Download Button (in a Download Window) close said window.", "Changed the Ambiguity Option to \"Download Options\" which toggles the Pre-Selected download options between \"All\" and the Preferred Quality." ]
+	  },
+	  {
+		"Name": "Design Stuff",
+		"Order": 0,
+		"Changes": [ "Change \"Get Torrent\" to \"Download\" in the Episode Tile, with a new icon.", "Changed the Quality of an Episode Tile to Show \"Best Quality\"", "Changed the Icon next to the Last Aired Episode to a Download Icon." ]
+	  },
+	  {
+		"Name": "Things to Note",
+		"Order": 0,
+		"Changes": [ "Added credits for Icons8 for their icons.", "Download button in Episode Tiles is now visible by default.", "Downloads will highlight their Video Quality if its the User's Preferred Quality." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.8.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Revamped Settings",
+		"Order": 0,
+		"Changes": [ "Check-boxes now use the same Hover/Hold style as other components in the App.", "Added informational text below each option to explicitly explain it.", "Moved controls around to accommodate to the new info text." ]
+	  },
+	  {
+		"Name": "New Rounded Designs",
+		"Order": 0,
+		"Changes": [ "Show Tiles, Search Tiles and Search Tiles now all have a rounded rectangle background instead of borders.", "Hovering over one will highlight it with a brighter color." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.8.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Settings",
+		"Order": 0,
+		"Changes": [ "Added a new \"Zooqle Links\" setting that changes what happens when you click a Show or Episode's Name.", "Added a new \"Episode Behavior\" setting that changes what happens when you click on a Show's Last Aired Episode." ]
+	  },
+	  {
+		"Name": "Random Things",
+		"Order": 0,
+		"Changes": [ "Clicking a Show's Next Episode now takes you to that episode's page.", "Improved the Hover effect of the Show/Episode Tiles.", "Improved Search Result Tiles." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Dynamic Episode Update",
+		"Order": 0,
+		"Changes": [ "Episodes now automatically update their Air Time.", "Upcoming episodes that Air during the app's runtime will now be detected and acted upon accordingly.", "For comparison; older versions' episodes would stay the same no matter how long the app was running." ]
+	  },
+	  {
+		"Name": "Extreme Optimizations",
+		"Order": 0,
+		"Changes": [ "Reduced the Memory (RAM) usage of the app by up to 95%.", "Reduced the CPU usage of the app by up to 25%.", "The changes above will eliminate your PC from becoming really slow and jittery when the app is first ran with ~4 Shows or more." ]
+	  },
+	  {
+		"Name": "Quality Changes",
+		"Order": 0,
+		"Changes": [ "Show Pages now load earlier and faster.", "Hover effect of the Show/Episode Tiles no longer works if its window isn't selected.", "Lowered the position of the \"Best Quality\" in Episode Tiles.", "Improved the Notification window design." ]
+	  },
+	  {
+		"Name": "Fixes and Such",
+		"Order": 0,
+		"Changes": [ "Fixed Loading Bar getting stuck after Shows loaded.", "Fixed informational text for the First Time Setup.", "Fixed crashes when closing a window containing Episode Tiles really fast." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.0.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes for Things",
+		"Order": 0,
+		"Changes": [ "Fixed the scroll bar in settings not being at the top at first.", "Fixed Upcoming and Missed tabs' (numbers) not updating correctly.", "Fixed a crash when a new Episode airs during runtime." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Local Show Save",
+		"Order": 0,
+		"Changes": [ "Most of the Show's data is now saved locally.", "Show load times are now 325% faster due to this change." ]
+	  },
+	  {
+		"Name": "Changes Worth Mentioning",
+		"Order": 0,
+		"Changes": [ "URL label in the Shows Window now changes to \"Show Name\" if the text-box does not contain a URL.", "Opening the Theme Changer for the first time will inform you how to change the theme.", "Added and updated tool-tips for nearly every component in the app." ]
+	  },
+	  {
+		"Name": "Stuff that got Fixed",
+		"Order": 0,
+		"Changes": [ "Fixed a crash when deleting a 'loading' Show." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.1.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Local Shows Improvement",
+		"Order": 0,
+		"Changes": [ "Improved long-term viability for local Shows." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.1.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Episode Tabs Upgrade",
+		"Order": 0,
+		"Changes": [ "Upgraded the Today/Missed/Upcoming tabs.", "Added a new opening and closing animation.", "Reduced over-all size." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.2.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New App Icon",
+		"Order": 0,
+		"Changes": [ "Yep. Fancy. New. Icon!" ]
+	  },
+	  {
+		"Name": "Show Page Redesign",
+		"Order": 0,
+		"Changes": [ "Changed the layout of the Show Page to accommodate higher Season/Episode numbers as well as the addition of more Show information.", "Added Genre, Rating, Last and Next Episode Air Status to the Show Info.", "Fixed issues with season/episode numbers not showing correctly.", "Reduced the overall size of controls to accommodate to lower resolution displays." ]
+	  },
+	  {
+		"Name": "Download Page Redesign",
+		"Order": 0,
+		"Changes": [ "Tweaked the design of the Download Page bringing better performance for download loading.", "Download buttons now appear immediately with a loading icon rather than having a loader as place-holder.", "Reduced the overall size of controls to accommodate to lower resolution displays." ]
+	  },
+	  {
+		"Name": "Performance For All",
+		"Order": 0,
+		"Changes": [ "Loading shows visually is now faster and less taxing.", "Episode Tiles loading on the Main window is now smoother.", "Sorting download options is now faster.", "View Shows button is now disabled while the local Show Load ends (not the full Shows Load), this change fixes Shows getting stuck in loading if the Shows window was opened during local Show load." ]
+	  },
+	  {
+		"Name": "General Design Improvements",
+		"Order": 0,
+		"Changes": [ "All windows now have a static, smaller top bar.", "Elements in the Main window now have a static size to reduce jaggedness during resize.", "Episode Tiles in the Main window are now smaller in general and will align in a similar layout as Show Tiles when possible.", "Show Tiles are now smaller and have a static height, allowing 3 columns on 1080p screen sizes.", "Change-Log window now has smaller text and smaller line-separators.", "URL/Search bar in the Shows window is now smaller.", "Fixed the Border color of the Change-Log window." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.2.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Couple of Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed the download button in Episode Tiles overlapping Air Times.", "Fixed the loading icon in the Download window not being in the center.", "Fixed the \"No Torrents Available\" notice not showing up.", "Fixed Torrent Names overflowing into a second line." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.2.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Shared Design",
+		"Order": 0,
+		"Changes": [ "App now supports shared design through Jad Apps." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.3.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Notify Icon Actions",
+		"Order": 0,
+		"Changes": [ "The Notify Icon that appears when the app is running in the background now opens a menu when right-clicked.", "The menu will allow fast access to the app's Main windows and to Close the app." ]
+	  },
+	  {
+		"Name": "Other",
+		"Order": 0,
+		"Changes": [ "Upcoming Episodes will now show episodes that air within the next 30 days rather than 7.", "Many bug fixes and crashes have been fixed." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.3.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Couple of Improvements",
+		"Order": 0,
+		"Changes": [ "Design now changes way faster.", "Fixed a crash when opening a show with no Internet." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.3.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Couple of Improvements",
+		"Order": 0,
+		"Changes": [ "Windows won't have their resize borders when maximized.", "Episode Tiles are now correctly ordered by Air Date.", "Fixed the App icon remaining in app tray after app is closed." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.4.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Excessive Usage Fix [Experimental]",
+		"Order": 0,
+		"Changes": [ "This update brings fixes that should stop the excessive CPU usage in very rare cases when the app starts." ]
+	  },
+	  {
+		"Name": "For the Quality of Life",
+		"Order": 0,
+		"Changes": [ "Smarter Internet Detection will detect connection changes faster and handles it better.", "Open All behavior was changed to only show one Download Window at a time.", "Changed how Air Dates are displayed, if an Air Date is over a month away in time, it will display the Calendar Day rather than how many years and months difference.", "Original Window location is now based on the user's task-bar location." ]
+	  },
+	  {
+		"Name": "Fixes, obviously",
+		"Order": 0,
+		"Changes": [ "App now correctly handles Shows not loading completely in rare cases.", "Fixed the 'Open All' button in the newly aired episodes not working properly.", "Fixed lingering CPU usage when windows containing an Episode Tile are closed." ]
+	  }
+	]
+  },
+  {
+	"Version": "1.9.4.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Visual Improvements and Fixes",
+		"Order": 0,
+		"Changes": [ "This update improves how the Themes are handled and fixes a couple or bugs.", "Changing the Theme from another app that uses the new Shared Theme will automatically update the theme in this App.", "Fixed glitches when creating a Custom Theme.", "Improved the Light Theme colors." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.0.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Focus Change",
+		"Order": 0,
+		"Changes": [ "Name changed to Shows Calendar.", "Adding support for Movies." ]
+	  },
+	  {
+		"Name": "TMDb Integration",
+		"Order": 0,
+		"Changes": [ "Shows and Movies are now gathered from TMDb instead of Zooqle.", "Zooqle integration will stay for download options." ]
+	  },
+	  {
+		"Name": "Design Improvements",
+		"Order": 0,
+		"Changes": [ "Overall changes in every aspect of the app with responsiveness, look and feel.", "Smaller elements in the app allow for a better experience on lower resolution devices.", "Custom Message Prompts and Scrolls, removing elements that just feel out of place." ]
+	  },
+	  {
+		"Name": "All-New Show Page",
+		"Order": 0,
+		"Changes": [ "Show pages with the TMDb integration have more info than ever.", "A better design to contain all the new features.", "Including Status, Runtime, Overview, Ratings, Season Overview, Cast, Crew.", "Similar Shows can be viewed and added with one click." ]
+	  },
+	  {
+		"Name": "Shows Form Improvements",
+		"Order": 0,
+		"Changes": [ "Tiles no longer scale, resulting in less janky movements and space for more.", "Improved the UI, separating the Search and Add Show areas." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.0.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Design Improvements",
+		"Order": 0,
+		"Changes": [ "Re-designed the Change-Log and Theme Changer.", "Improved Theme Change speed.", "Updated the notify icon pop-up.", "Improved Horizontal Scrolling." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "General Bug Fixes." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.0.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Options Update",
+		"Order": 0,
+		"Changes": [ "Removed depleted Options.", "Improved the Design.", "Sorted Options by Category.", "Added new Options.", "Fixed Quality Option not working correctly." ]
+	  },
+	  {
+		"Name": "Shows Window Changes",
+		"Order": 0,
+		"Changes": [ "Added a Sort button to change the sorting of Shows.", "Added a Discover button to check out currently popular Shows.", "Shows in the \"Add Show Window\" now have an Add button instead of a select button." ]
+	  },
+	  {
+		"Name": "General Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed the New/Recent/Upcoming tabs only showing one episode when open.", "Improved the size of Top Bars through-out the App.", "Episodes in the Main Window's Tabs are now ordered by Air Date." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.0.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Added the possibility to open a Show's Page from a Viewer Tile (from the Similar tab or the Add Show window).", "Fixed some of the options not working properly." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.1.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Movies",
+		"Order": 0,
+		"Changes": [ "Enabled Movies in the second button of the main window.", "You can save movies you like to track them.", "Discover currently popular movies.", "See in-depth information in a movie's page." ]
+	  },
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed a crash when you get notified of new episodes." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.1.1",
+	"Date": null,
+	"Tagline": "This update brings fixes to the update of Shows and Movies, and other smaller things.",
+	"ChangeGroups": [
+	  {
+		"Name": "Show and Movies Update",
+		"Order": 0,
+		"Changes": [ "Fixed Shows not updating when they should.", "Shows and Movies now update at noon and midnight.", "Fixed having duplicate episodes in the Main Window Tabs." ]
+	  },
+	  {
+		"Name": "Episode Tile Improvements",
+		"Order": 0,
+		"Changes": [ "Episode Tile Names are now correctly sized.", "Added the possibility to link an episode's Show from the tile." ]
+	  },
+	  {
+		"Name": "General Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed the episode notifications not showing the correct episodes.", "Fixed the episode notification window not having the correct size.", "Fixed crashes when Shows/Movies are being saved.", "Fixed Movies and Shows not saving Zooqle Links correctly." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.1.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed new Shows and Movies not loading.", "Fixed a crash when adding a Show or Movie.", "Episodes now load before-hand at startup.", "Update is now smoother.", "Fixed the Startup option not working correctly." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.1.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed a crash related to Movies.", "Fixed crashes and malfunctions related to Startup Mode setting." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.1.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "A Better Notification",
+		"Order": 0,
+		"Changes": [ "Notification pop-up will not be near your task-bar instead of the middle of the screen.", "Improved the size of the pop-up.", "Individually downloading episodes will automatically remove them from the notification window.", "Fixed \"Open All\" button not working correctly." ]
+	  },
+	  {
+		"Name": "Fixes and Improvements",
+		"Order": 0,
+		"Changes": [ "Fixed janky episode tile overview text.", "Fixed the zooqle link feature not working correctly.", "Fixed a crash when clicking the Discover button with no Internet.", "Fixed rare crashes at the app startup.", "Fixed the episodes horizontal scroll in Show Pages." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.2.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Local Show Library",
+		"Order": 0,
+		"Changes": [ "Specify from the Shows window where you have your Shows using the folder button.", "The app can now automatically find files that match episodes in your library.", "Episode Tiles will have a play button when it detects a file that matches the episode.", "More features to come." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed a crash when scrolling in an empty \"Add Show\" window.", "Small bug fixes here and there." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.2.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Show Library",
+		"Order": 0,
+		"Changes": [ "Added the Show Library window accessed from the main window.", "Let the app keep track of what you watched and offer what to watch next." ]
+	  },
+	  {
+		"Name": "Small Changes and Fixes",
+		"Order": 0,
+		"Changes": [ "Removed the background from hovered icons.", "Changed the color for \"Link\" and \"Play\" icons on episode tiles.", "Fixed a bunch occasional crashes." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.2.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Smart Watched",
+		"Order": 0,
+		"Changes": [ "The App will now wait till your video player exits to mark an episode was watched.", "An episode will only be marked as watched when 75% of the episode's runtime elapsed." ]
+	  },
+	  {
+		"Name": "New Features",
+		"Order": 0,
+		"Changes": [ "Added a right-click tool-tip on the Icon of windows to switch themes.", "Tool-Tips have been improved with icons and other features.", "Added the Library tool-tip in the Task Bar Icon." ]
+	  },
+	  {
+		"Name": "Fixes",
+		"Order": 0,
+		"Changes": [ "Fixed the Show window being maxed out every time.", "Crash Fixes." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.2.3",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Updating Fix",
+		"Order": 0,
+		"Changes": [ "This update should fix a rare crash when shows and movies are being updated." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.2.4",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Show Library Improvements",
+		"Order": 0,
+		"Changes": [ "Unified the Start and Continue Watching categories into one.", "Added recently watched episodes for easy access.", "Added some spice to the informational text." ]
+	  },
+	  {
+		"Name": "Speed Improvements",
+		"Order": 0,
+		"Changes": [ "Dramatically improved the speed it takes to mark episodes as watched/unwatched.", "Blazed out the time needed for the Show Library to reload." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.3.0",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Slick UI Components",
+		"Order": 0,
+		"Changes": [ "App now uses Slick UI controls shared between all Apps.", "Improved the size of controls for 720p screens." ]
+	  },
+	  {
+		"Name": "New Episode Thumbnail Banner",
+		"Order": 0,
+		"Changes": [ "Added a banner that appears on unwatched episodes' thumbnail.", "The banner will only show on \"Aired\" episodes.", "The banner will read \"New\" if the episode aired in the past week." ]
+	  },
+	  {
+		"Name": "New Options",
+		"Order": 0,
+		"Changes": [ "Added the option to disable the notification sound.", "Added the option to disabled the Unwatched and New banners on episode thumbnails." ]
+	  },
+	  {
+		"Name": "Local Library",
+		"Order": 0,
+		"Changes": [ "Fixed Episode Tiles sometimes not being up to date with their respective episode's local state.", "Added a manual Refresh button to the Library Window.", "Fixed reloading a Show from clearing the local state of its episodes." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.3.1",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "New Things",
+		"Order": 0,
+		"Changes": [ "Added the Unwatched/New banners to Show thumbnails in the Show Tile and Page.", "Added the option to mark a show as watched/unwatched from the Show Tile." ]
+	  },
+	  {
+		"Name": "And Some Improvements",
+		"Order": 0,
+		"Changes": [ "Improved the vertical scroll bar with fancy animations and QOL joy.", "Fixed icons/labels not clicking sometimes.", "Fixed the Add button on Show Pages." ]
+	  }
+	]
+  },
+  {
+	"Version": "2.3.2",
+	"Date": null,
+	"Tagline": "",
+	"ChangeGroups": [
+	  {
+		"Name": "Finale Warning",
+		"Order": 0,
+		"Changes": [ "Added the option to be alerted when you're about to play the finale of a season." ]
+	  }
+	]
+  }
+]

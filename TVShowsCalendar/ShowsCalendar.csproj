@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1041D45A-41B0-472B-980E-5D4E5F5FF8C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShowsCalendar</RootNamespace>
+    <AssemblyName>Shows Calendar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>TV Shows Calendar</ProductName>
+    <PublisherName>Jad Hajjar</PublisherName>
+    <SuiteName>Jad Apps</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>4.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7E464038F9D5459B4744C52C5423FB25F235EBD6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TVShowsCalendar_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.0.9.11\lib\net45\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.8.11.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.11\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LtGt, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LtGt.1.0.2\lib\net45\LtGt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.VideoConverter, Version=1.1.4.0, Culture=neutral, PublicKeyToken=395ccb334978a0cd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.VideoConverter.1.1.4\lib\net40\NReco.VideoConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.VideoInfo, Version=1.1.1.0, Culture=neutral, PublicKeyToken=8f59ee36d2987295, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.VideoInfo.1.1.1\lib\net35\NReco.VideoInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Sprache, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sprache.2.2.0\lib\net45\Sprache.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Vlc.DotNet.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.3.1.0\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.3.1.0\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Forms, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Forms.3.1.0\lib\net45\Vlc.DotNet.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="YoutubeExplode, Version=4.6.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExplode.4.6.8\lib\net45\YoutubeExplode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Enums\ChangeType.cs" />
+    <Compile Include="Classes\Enums\ContentType.cs" />
+    <Compile Include="Classes\Enums\QualityFilter.cs" />
+    <Compile Include="Classes\Enums\ViewType.cs" />
+    <Compile Include="Classes\Generics\ImageContent.cs" />
+    <Compile Include="Classes\Global\GeneralMethods.cs" />
+    <Compile Include="Classes\Generics\WatchInfo.cs" />
+    <Compile Include="Classes\Interfaces\IContent.cs" />
+    <Compile Include="Classes\Interfaces\IEpisodePref.cs" />
+    <Compile Include="Classes\Interfaces\IInteractableContent.cs" />
+    <Compile Include="Classes\Interfaces\IPlayableContent.cs" />
+    <Compile Include="Classes\Interfaces\IDownloadableContent.cs" />
+    <Compile Include="Classes\Interfaces\IParentContent.cs" />
+    <Compile Include="Classes\Interfaces\IEpisodeData.cs" />
+    <Compile Include="Classes\Interfaces\ISeasonPref.cs" />
+    <Compile Include="Classes\Interfaces\ISeasonData.cs" />
+    <Compile Include="Classes\Interfaces\IMoviePref.cs" />
+    <Compile Include="Classes\Interfaces\IMovieData.cs" />
+    <Compile Include="Classes\Interfaces\IShowPref.cs" />
+    <Compile Include="Classes\Interfaces\IWatchControl.cs" />
+    <Compile Include="Classes\LightContent.cs" />
+    <Compile Include="Classes\Enums\MediaSortOptions.cs" />
+    <Compile Include="Classes\Interfaces\IShowData.cs" />
+    <Compile Include="Classes\SearchQuery.cs" />
+    <Compile Include="Controls\ContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ContentListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\CharacterPageTile.Designer.cs">
+      <DependentUpon>CharacterPageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\Controls\ImagePersonControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageContentControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageSeasonControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageSmallMediaViewerControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageTagsPanel.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageNetworkIconsControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageSocialLinksControl.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageLabelText.cs" />
+    <Compile Include="Controls\FullPageTiles\Controls\ImageSideButton.cs" />
+    <Compile Include="Controls\FullPageTiles\EpisodePageTile.Designer.cs">
+      <DependentUpon>EpisodePageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\FullPageContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\FullPageTile.Designer.cs">
+      <DependentUpon>FullPageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\MoviePageTile.Designer.cs">
+      <DependentUpon>MoviePageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\SeasonPageTile.Designer.cs">
+      <DependentUpon>SeasonPageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\ShowPageTile.Designer.cs">
+      <DependentUpon>ShowPageTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\MouseHook.cs" />
+    <Compile Include="Classes\Movie-Base.cs" />
+    <Compile Include="Classes\Global\Options.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Classes\Global\Preferences.cs" />
+    <Compile Include="Classes\Generics\RatingInfo.cs" />
+    <Compile Include="Classes\Season.cs" />
+    <Compile Include="Classes\Movie-Create.cs" />
+    <Compile Include="Classes\Movie-Update.cs" />
+    <Compile Include="Classes\Show-Update.cs" />
+    <Compile Include="Classes\Show-Create.cs" />
+    <Compile Include="Classes\Global\SingleInstanceMessage.cs" />
+    <Compile Include="Classes\ThumbnailCollection.cs" />
+    <Compile Include="Classes\Torrent.cs" />
+    <Compile Include="Classes\TorrentSortingData.cs" />
+    <Compile Include="Classes\Enums\TorrentSortOption.cs" />
+    <Compile Include="Controls\CategoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\FullPageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\EpisodePageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\CharacterPageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SeasonTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SeasonTile.Designer.cs">
+      <DependentUpon>SeasonTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\MoviePageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\SeasonPageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FullPageTiles\ShowPageTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SmallMediaViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SmallMediaViewer.Designer.cs">
+      <DependentUpon>SmallMediaViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VideoFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VideoFileControl.Designer.cs">
+      <DependentUpon>VideoFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\YoutubeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FullScreenPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PictureInPictureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureInPictureControl.Designer.cs">
+      <DependentUpon>PictureInPictureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreloaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreloaderForm.Designer.cs">
+      <DependentUpon>PreloaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RateForm.Designer.cs">
+      <DependentUpon>RateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\ImageHandler.cs" />
+    <Compile Include="Handlers\LocalMovieHandler.cs" />
+    <Compile Include="Handlers\LocalShowHandler.cs" />
+    <Compile Include="Handlers\MediaDiscoveryHandler.cs" />
+    <Compile Include="Handlers\MovieManager.cs" />
+    <Compile Include="Handlers\UpdateHandler.cs" />
+    <Compile Include="IO\File.cs" />
+    <Compile Include="IO\Folder.cs" />
+    <Compile Include="IO\Handler.cs" />
+    <Compile Include="Panels\PC_About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_About.Designer.cs">
+      <DependentUpon>PC_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_AddMedia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_AddMedia.Designer.cs">
+      <DependentUpon>PC_AddMedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_CharacterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_CharacterView.Designer.cs">
+      <DependentUpon>PC_CharacterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Dashboard.Designer.cs">
+      <DependentUpon>PC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_DiscoverLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_DiscoverLibrary.Designer.cs">
+      <DependentUpon>PC_DiscoverLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Download.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Download.Designer.cs">
+      <DependentUpon>PC_Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_EpisodeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_EpisodeView.Designer.cs">
+      <DependentUpon>PC_EpisodeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Library.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Library.Designer.cs">
+      <DependentUpon>PC_Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_LibraryFolders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_LibraryFolders.Designer.cs">
+      <DependentUpon>PC_LibraryFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_LibraryRenamer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_LibraryRenamer.Designer.cs">
+      <DependentUpon>PC_LibraryRenamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_ManageCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_ManageCategory.Designer.cs">
+      <DependentUpon>PC_ManageCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_People.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_People.Designer.cs">
+      <DependentUpon>PC_People.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Player.Designer.cs">
+      <DependentUpon>PC_Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_SeasonView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_SeasonView.Designer.cs">
+      <DependentUpon>PC_SeasonView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Settings.Designer.cs">
+      <DependentUpon>PC_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Movies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Movies.Designer.cs">
+      <DependentUpon>PC_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_MoviePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_MoviePage.Designer.cs">
+      <DependentUpon>PC_MoviePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_ShowPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_ShowPage.Designer.cs">
+      <DependentUpon>PC_ShowPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Shows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Shows.Designer.cs">
+      <DependentUpon>PC_Shows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_ViewImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_ViewImage.Designer.cs">
+      <DependentUpon>PC_ViewImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PC_Watch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PC_Watch.Designer.cs">
+      <DependentUpon>PC_Watch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PirateBay\Constants.cs" />
+    <Compile Include="PirateBay\Query.cs" />
+    <Compile Include="PirateBay\QueryOrder.cs" />
+    <Compile Include="PirateBay\TorrentCategory.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AutoSizeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderedImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderedImage.Designer.cs">
+      <DependentUpon>BorderedImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharacterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterControl.Designer.cs">
+      <DependentUpon>CharacterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WatchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Global\Data.cs" />
+    <Compile Include="Classes\Episode.cs" />
+    <Compile Include="Handlers\ShowManager.cs" />
+    <Compile Include="Controls\MediaViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MediaViewer.Designer.cs">
+      <DependentUpon>MediaViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OptionControl.Designer.cs">
+      <DependentUpon>OptionControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\FullPageTiles\CharacterPageTile.resx">
+      <DependentUpon>CharacterPageTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FullPageTiles\EpisodePageTile.resx">
+      <DependentUpon>EpisodePageTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FullPageTiles\FullPageTile.resx">
+      <DependentUpon>FullPageTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FullPageTiles\MoviePageTile.resx">
+      <DependentUpon>MoviePageTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FullPageTiles\ShowPageTile.resx">
+      <DependentUpon>ShowPageTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SeasonTile.resx">
+      <DependentUpon>SeasonTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SmallMediaViewer.resx">
+      <DependentUpon>SmallMediaViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VideoFileControl.resx">
+      <DependentUpon>VideoFileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PictureInPictureControl.resx">
+      <DependentUpon>PictureInPictureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FullScreenPlayer.resx">
+      <DependentUpon>FullScreenPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreloaderForm.resx">
+      <DependentUpon>PreloaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RateForm.resx">
+      <DependentUpon>RateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_About.resx">
+      <DependentUpon>PC_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_AddMedia.resx">
+      <DependentUpon>PC_AddMedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_CharacterView.resx">
+      <DependentUpon>PC_CharacterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Dashboard.resx">
+      <DependentUpon>PC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_DiscoverLibrary.resx">
+      <DependentUpon>PC_DiscoverLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Download.resx">
+      <DependentUpon>PC_Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_EpisodeView.resx">
+      <DependentUpon>PC_EpisodeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Library.resx">
+      <DependentUpon>PC_Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_LibraryFolders.resx">
+      <DependentUpon>PC_LibraryFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_LibraryRenamer.resx">
+      <DependentUpon>PC_LibraryRenamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_ManageCategory.resx">
+      <DependentUpon>PC_ManageCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_People.resx">
+      <DependentUpon>PC_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Player.resx">
+      <DependentUpon>PC_Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_SeasonView.resx">
+      <DependentUpon>PC_SeasonView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Settings.resx">
+      <DependentUpon>PC_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Movies.resx">
+      <DependentUpon>PC_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_MoviePage.resx">
+      <DependentUpon>PC_MoviePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_ShowPage.resx">
+      <DependentUpon>PC_ShowPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Shows.resx">
+      <DependentUpon>PC_Shows.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_ViewImage.resx">
+      <DependentUpon>PC_ViewImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PC_Watch.resx">
+      <DependentUpon>PC_Watch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BorderedImage.resx">
+      <DependentUpon>BorderedImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CharacterControl.resx">
+      <DependentUpon>CharacterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WatchControl.resx">
+      <DependentUpon>WatchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MediaViewer.resx">
+      <DependentUpon>MediaViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OptionControl.resx">
+      <DependentUpon>OptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TorrentTile.resx">
+      <DependentUpon>TorrentTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Show-Base.cs" />
+    <Compile Include="Handlers\BrowserHandler.cs" />
+    <Compile Include="Handlers\SingleInstance.cs" />
+    <Compile Include="Handlers\TMDbHandler.cs" />
+    <Compile Include="Controls\TorrentTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TorrentTile.Designer.cs">
+      <DependentUpon>TorrentTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\WebProcessor.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLog.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiny_YTS.png" />
+    <None Include="Resources\Tiny_Rarbg.png" />
+    <None Include="Resources\Tiny_Translation.png" />
+    <None Include="Resources\Big_Download.png" />
+    <None Include="Resources\Tiny_Calendar.png" />
+    <None Include="Resources\Tiny_Stars.png" />
+    <None Include="Resources\Icon_Heart.png" />
+    <None Include="Resources\Icon_StarFilled.png" />
+    <None Include="Resources\Icon_Star.png" />
+    <None Include="Resources\Icon_HeartFilled.png" />
+    <None Include="Resources\Big_Dots_V.png" />
+    <None Include="Resources\Tiny_List.png" />
+    <None Include="Resources\Tiny_Grid.png" />
+    <None Include="Resources\Tiny_Nyaa.png" />
+    <None Include="Resources\Tiny_XClose.png" />
+    <None Include="Resources\Tiny_ThumbsUpDown.png" />
+    <None Include="Resources\Tiny_Categories.png" />
+    <None Include="Resources\Tiny_RemoveRating.png" />
+    <None Include="Resources\Tiny_Love.png" />
+    <None Include="Resources\Tiny_Season.png" />
+    <None Include="Resources\Big_Info.png" />
+    <None Include="Resources\Icon_Info.png" />
+    <None Include="Resources\Tiny_Trailer.png" />
+    <None Include="Resources\Icon_Trailer.png" />
+    <None Include="Resources\Icon_Career.png" />
+    <None Include="Resources\Icon_Library.png" />
+    <None Include="Resources\Icon_Next.png" />
+    <None Include="Resources\Icon_Previous.png" />
+    <None Include="Resources\Huge_PlayBack.png" />
+    <None Include="Resources\Icon_PlayBack.png" />
+    <None Include="Resources\Big_ChevronLeft.png" />
+    <None Include="Resources\Icon_Seasons.png" />
+    <None Include="Resources\Icon_VideoFile.png" />
+    <None Include="Resources\Icon_Images.png" />
+    <None Include="Resources\Icon_Crew.png" />
+    <None Include="Resources\Icon_Cast.png" />
+    <None Include="Resources\Icon_Videos.png" />
+    <None Include="Resources\Icon_Similar.png" />
+    <None Include="Resources\Huge_Plus.png" />
+    <None Include="Resources\Icon_Plus.png" />
+    <None Include="Resources\Icon_PlaySlick.png" />
+    <None Include="Resources\Icon_Download.png" />
+    <None Include="Resources\Icon_ArrowLeft.png" />
+    <None Include="Resources\Tiny_VideoCam.png" />
+    <None Include="Resources\Tiny_Status.png" />
+    <None Include="Resources\Icon_Twitter.png" />
+    <None Include="Resources\Icon_Website.png" />
+    <None Include="Resources\Icon_Facebook.png" />
+    <None Include="Resources\Icon_Imdb.png" />
+    <None Include="Resources\Icon_Instagram.png" />
+    <None Include="Resources\Tiny_Pirate.png" />
+    <None Include="Resources\Tiny_X.png" />
+    <None Include="Resources\Huge_TVPlay.png" />
+    <None Include="Resources\Tiny_Rating.png" />
+    <None Include="Resources\Tiny_Click.png" />
+    <None Include="Resources\Huge_Team.png" />
+    <None Include="Resources\Big_AZ.png" />
+    <None Include="Resources\Tiny_New.png" />
+    <None Include="Resources\Huge_Back.png" />
+    <None Include="Resources\Zoom_Minus.png" />
+    <None Include="Resources\Zoom_Plus.png" />
+    <None Include="Resources\Zoom_Magnifier.png" />
+    <None Include="Resources\Tiny_Clipboard.png" />
+    <None Include="Resources\Huge_Play.png" />
+    <None Include="Resources\Huge_TV.png" />
+    <None Include="Resources\Huge_Movie.png" />
+    <None Include="Resources\Big_Youtube.png" />
+    <None Include="Resources\I_Dll.png" />
+    <None Include="Resources\I_Vid.png" />
+    <None Include="Resources\Tiny_People.png" />
+    <None Include="Resources\Tiny_Dislike.png" />
+    <None Include="Resources\Big_Similar.png" />
+    <None Include="Resources\Icon_64_Shadow.png" />
+    <None Include="Resources\Icon_64_Play.png" />
+    <None Include="Resources\Icon_64_Back.png" />
+    <None Include="Resources\Tiny_PictureInPicture.png" />
+    <None Include="Resources\Tiny_RemovePlay.png" />
+    <None Include="Resources\Icon_22.png" />
+    <None Include="Resources\Icon_16.png" />
+    <None Include="Resources\Icon_128.png" />
+    <None Include="Resources\Icon_512.png" />
+    <None Include="Resources\Icon_32.png" />
+    <None Include="Resources\Icon_64.png" />
+    <None Include="Resources\Big_Portrait.png" />
+    <None Include="Resources\Big_Picture.png" />
+    <None Include="Resources\Play_100.png" />
+    <None Include="Resources\Big_Stop.png" />
+    <None Include="Resources\Tiny_Unwatched.png" />
+    <None Include="Resources\Tiny_Forward.png" />
+    <None Include="Resources\Tiny_Watched.png" />
+    <None Include="Resources\Tiny_Rewind.png" />
+    <None Include="Resources\Tiny_Close.png" />
+    <None Include="Resources\Icon_ZoomOut.png" />
+    <None Include="Resources\Icon_ZoomIn.png" />
+    <None Include="Resources\Big_Folder.png" />
+    <None Include="Resources\Tiny_MoreThan.png" />
+    <None Include="Resources\Huge_Folder.png" />
+    <None Include="Resources\Tiny_Edit.png" />
+    <None Include="Resources\Tiny_Mute.png" />
+    <None Include="Resources\Tiny_Speedometer.png" />
+    <None Include="Resources\Tiny_AspectRatio.png" />
+    <None Include="Resources\Tiny_Youtube.png" />
+    <None Include="Resources\Icon_BrokenYoutube.png" />
+    <None Include="Resources\Big_Blooper.png" />
+    <None Include="Resources\Big_BehindScenes.png" />
+    <None Include="Resources\Big_Trailer.png" />
+    <None Include="Resources\Big_Featurette.png" />
+    <None Include="Resources\Big_Clip.png" />
+    <None Include="Resources\Tiny_Screenshot.png" />
+    <None Include="Resources\DownloadBatch.png" />
+    <None Include="Resources\Icon_PlayHuge.png" />
+    <None Include="Resources\Big_Crew.png" />
+    <None Include="Resources\Tiny_RemoveImage.png" />
+    <None Include="Resources\Big_Harddisk.png" />
+    <None Include="Resources\Tiny_Job.png" />
+    <None Include="Resources\Big_Cast.png" />
+    <None Include="Resources\ArrowUp.png" />
+    <None Include="Resources\ArrowDown.png" />
+    <None Include="Resources\Big_Genre.png" />
+    <None Include="Resources\Big_Calendar.png" />
+    <None Include="Resources\Big_Label.png" />
+    <None Include="Resources\Big_Wait.png" />
+    <None Include="Resources\Huge_Download.png" />
+    <None Include="Resources\Big_ViewPlay.png" />
+    <None Include="Resources\Tiny_Health.png" />
+    <None Include="Resources\Tiny_Signal_3.png" />
+    <None Include="Resources\Tiny_Signal_2.png" />
+    <None Include="Resources\Tiny_Signal_1.png" />
+    <None Include="Resources\Tiny_Signal_0.png" />
+    <None Include="Resources\Tiny_Image.png" />
+    <None Include="Resources\Tiny_Similar.png" />
+    <None Include="Resources\Tiny_Cast.png" />
+    <None Include="Resources\Tiny_Crew.png" />
+    <None Include="Resources\Big_Add.png" />
+    <None Include="Resources\Tiny_Licence.png" />
+    <None Include="Resources\Tiny_Hint.png" />
+    <None Include="Resources\Tiny_App.png" />
+    <None Include="Resources\Tiny_Z.png" />
+    <None Include="Resources\Big_Palette.png" />
+    <None Include="Resources\Big_Brush.png" />
+    <None Include="Resources\Big_Cog.png" />
+    <None Include="Resources\Big_Automatic.png" />
+    <None Include="Resources\Big_Airing1.png" />
+    <None Include="Resources\Tiny_Manage.png" />
+    <None Include="Resources\Tiny_Automatic.png" />
+    <None Include="Resources\Notif_Long.wav" />
+    <None Include="Resources\Notif_Quick.wav" />
+    <None Include="Resources\Icons8.png" />
+    <None Include="Resources\TMDB.png" />
+    <None Include="Resources\Tiny_Search.png" />
+    <None Include="Resources\Big_Search.png" />
+    <None Include="Resources\Circle.png" />
+    <None Include="Resources\Circle_Empty.png" />
+    <None Include="Resources\Circle_Filled.png" />
+    <None Include="Resources\PoweredByTMDb.png" />
+    <None Include="Resources\Icon_BigPlay.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Tiny_Dash.png" />
+    <None Include="Resources\Tiny_TV.png" />
+    <None Include="Resources\Tiny_Movie.png" />
+    <None Include="Resources\Tiny_Play.png" />
+    <None Include="Resources\Tiny_Settings.png" />
+    <None Include="Resources\Tiny_Library.png" />
+    <None Include="Resources\Tiny_AddFolder.png" />
+    <None Include="Resources\Tiny_Trash.png" />
+    <None Include="Resources\Tiny_Folder.png" />
+    <None Include="Resources\Tiny_Ok.png" />
+    <None Include="Resources\Tiny_Cancel.png" />
+    <None Include="Resources\Tiny_FolderPlay.png" />
+    <None Include="Resources\Tiny_Add.png" />
+    <None Include="Resources\Tiny_Airing.png" />
+    <None Include="Resources\Tiny_Schedule.png" />
+    <None Include="Resources\Tiny_TVEmpty.png" />
+    <None Include="Resources\Tiny_RetroTv.png" />
+    <None Include="Resources\Big_Airing.png" />
+    <None Include="Resources\Big_RetroTv.png" />
+    <None Include="Resources\Big_TVEmpty.png" />
+    <None Include="Resources\Big_Schedule.png" />
+    <None Include="Resources\Big_OldMovie.png" />
+    <None Include="Resources\Big_Popcorn.png" />
+    <None Include="Resources\Tiny_Discover.png" />
+    <None Include="Resources\Tiny_CC.png" />
+    <None Include="Resources\Tiny_Download.png" />
+    <None Include="Resources\Tiny_CloudDownload.png" />
+    <None Include="Resources\Tiny_Storage.png" />
+    <None Include="Resources\Tiny_Label.png" />
+    <None Include="Resources\Tiny_Resolution.png" />
+    <None Include="Resources\Tiny_Sound.png" />
+    <None Include="Resources\Tiny_Link.png" />
+    <None Include="Resources\Tiny_3D.png" />
+    <None Include="Resources\Tiny_4K.png" />
+    <None Include="Resources\Tiny_720.png" />
+    <None Include="Resources\Tiny_1080.png" />
+    <None Include="Resources\Tiny_SD.png" />
+    <None Include="Resources\Tiny_All.png" />
+    <None Include="Resources\Tiny_Dots_V.png" />
+    <None Include="Resources\Icon_Dots_V.png" />
+    <None Include="Resources\Tiny_Dots_H.png" />
+    <None Include="Resources\Icon_Dots_H.png" />
+    <None Include="Resources\Tiny_Star.png" />
+    <None Include="Resources\Tiny_Switch.png" />
+    <None Include="Resources\Tiny_Info.png" />
+    <None Include="Resources\Tiny_Paint.png" />
+    <None Include="Resources\Tiny_Refresh.png" />
+    <None Include="Resources\Tiny_JumpBack.png" />
+    <None Include="Resources\Tiny_JumpForward.png" />
+    <None Include="Resources\Tiny_Pause.png" />
+    <None Include="Resources\Tiny_PlayNoBorder.png" />
+    <None Include="Resources\Tiny_Previous.png" />
+    <None Include="Resources\Tiny_Next.png" />
+    <None Include="Resources\Tiny_Fullscreen.png" />
+    <None Include="Resources\Tiny_NormalScreen.png" />
+    <None Include="Resources\Tiny_RestoreWindow.png" />
+    <None Include="Resources\Tiny_MiniWindow.png" />
+    <None Include="Resources\Huge_Crew.png" />
+    <None Include="Resources\Huge_Cast.png" />
+    <None Include="Resources\Icon_ErrorImage.png" />
+    <None Include="Resources\Big_Writer.png" />
+    <None Include="Resources\Huge_Quill.png" />
+    <None Include="Resources\Big_Status.png" />
+    <None Include="Resources\Big_Website.png" />
+    <None Include="Resources\Big_Rating.png" />
+    <None Include="Resources\Big_Z.png" />
+    <None Include="Resources\icons8-star-filled-16.png" />
+    <None Include="Resources\icons8-star-16.png" />
+    <None Include="Resources\PB_5_Stars_Filled.png" />
+    <None Include="Resources\PB_5_Stars.png" />
+    <None Include="Resources\Tiny_Budget.png" />
+    <None Include="Resources\Tiny_Country.png" />
+    <None Include="Resources\Tiny_Lanuage.png" />
+    <None Include="Resources\Big_Budget.png" />
+    <None Include="Resources\Big_Country.png" />
+    <None Include="Resources\Big_Language.png" />
+    <None Include="Resources\Big_Production.png" />
+    <None Include="Resources\TodayNotification.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Extensions\Extensions\Extensions.csproj">
+      <Project>{50ea98fd-47b0-40bc-a51e-3defb2525f2c}</Project>
+      <Name>Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shows Renamer Module\ShowsRenamer.Module\ShowsRenamer.Module.csproj">
+      <Project>{4fef1620-5d97-4c64-892d-0090bec796ae}</Project>
+      <Name>ShowsRenamer.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SlickControls\SlickControls.csproj">
+      <Project>{2c0e1d8a-6619-4116-98ee-3f9e6c937537}</Project>
+      <Name>SlickControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TMDbLib\TMDbLib.csproj">
+      <Project>{ca09a715-065b-41da-b2a9-f0ed20815788}</Project>
+      <Name>TMDbLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ChangeLog_1json__JSONSchema="http://json.schemastore.org/appsettings" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
